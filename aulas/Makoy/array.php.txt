@@ -1,0 +1,42 @@
+<?php
+
+echo "aula sobre array"
+
+$sabrina = array(12,18,32,7,-3,2);
+
+echo $sabrina[2]
+echo "<br>";
+
+$paulo = array("carro","celular","aviao","livro");
+
+echo $paulo
+echo "<br>";
+
+$mikael=array(
+	array(1,17,12,-70,70,32),
+	array("ola", "mundo","teclado","janela"),
+	array("mundo",18,-17,"casa","carro")
+	);
+	
+echo $mikael [1] [1]
+
+echo "<br>";
+
+$makoy=array(
+	"nome" => "mikael",
+	"sobrenome" => "Pelizari",
+	"telefone" => "999999",
+	"peso" => 60,
+	idade => 24
+),
+
+echo $makoy ["sobre"]
+
+echo $makoy ["idade"]
+
+echo "<br>";
+
+
+
+
+?>

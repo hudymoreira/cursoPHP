@@ -23,36 +23,37 @@
         
     echo '---------------------------------------------------------------------------------- <br>';
 
-        // FAZENDO SOMA COM ITENS DO ARRAY
+        echo 'FAZENDO SOMA COM ITENS DO ARRAY <br>';
     
-        // echo $var0[3] + $a[0];
+        echo $var0[3] + $var0[0].'<br>';
     
     echo '---------------------------------------------------------------------------------- <br>';
 
-                //ARRAY SIMPLES COM PALAVRAS
+                echo 'ARRAY SIMPLES COM PALAVRAS <br>';
 
-        //$var1 = array("Batata", "Cavalo", "Couve", "Carro");
-        //echo $var1[2];//IMPRIME COUVE
+        $var1 = array("Batata", "Cavalo", "Couve", "Carro");
+        
+        echo $var1[2]."<br>";//IMPRIME COUVE
 
                 //ARRAY SIMPLES MISTO
 
-        //$var2 = array(1, "Batata", "Casa", 17);
-        //echo $var2[3];//IMPRIME 17
+        $var2 = array(1, "Batata", "Casa", 17);
+        echo $var2[3]."<br>";//IMPRIME 17
 
     echo '---------------------------------------------------------------------------------- <br>';
 
-                //ARRAY MULTIDIMENSIONAL
+                echo 'ARRAY MULTIDIMENSIONAL <br>';
 
-        /*$var3 = array(
+        $var3 = array(
             array(1,2,3,4,5,6),
             array("Casa", "Carro", "Moto"),
             array(1, 2, "Carro", "Moto")
         );
 
-        echo $var3 [1][1];//IMPRIME CARRO DO DA SEGUNDA DIMENSÃO DO ARRAY
-        */
+        echo $var3 [1][1]."<br>";//IMPRIME CARRO DO DA SEGUNDA DIMENSÃO DO ARRAY
+        
     echo '---------------------------------------------------------------------------------- <br>';
-                //ARRAY ASSOCIATIVO
+                echo 'ARRAY ASSOCIATIVO <br>';
                 
         $var4 = array(
             "Nome"     => "Kaleo",
@@ -63,12 +64,12 @@
             "Altura"   => 1.70
         );
 
-        echo $var4 ["SNome"];/*IMPRIME O SOBRENOME SALVO, O INDICE É CAHAMADO
+        echo $var4 ["SNome"]."<br>";/*IMPRIME O SOBRENOME SALVO, O INDICE É CAHAMADO
         PELO NOME COLOCADO NO INDICE NO CASO "SNome"*/
 
     echo '---------------------------------------------------------------------------------- <br>';
     
-                //ARRAY ASSOCIATIVO MULTIDIMENSIONAL
+                echo 'ARRAY ASSOCIATIVO MULTIDIMENSIONAL <br>';
 
         $var4 = array(
         array(

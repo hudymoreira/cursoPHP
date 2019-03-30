@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+     
+      // Load the Visualization API and the piechart package.
+      google.load('visualization', '1.0', {'packages':['corechart']});
+       
+      // Set a callback to run when the Google Visualization API is loaded.
+      google.setOnLoadCallback(drawChart);
+ 
+      // Função q carrega os dados e desenha o grafico em pizza 
+       
+      function drawChart() {
+ 
+      // Criar tipo data table
+      var data = new google.visualization.DataTable();
+     //no caso do grafico  pizza possui duas colunas, com duas colunas
+      data.addColumn('string', 'Bebida');
+      data.addColumn('number', 'Quantidade');
+     //linha da tabela
+     data.addRows([
+        ['', 3],
+        ['', 2],
+        ['', 9], 
+        ['', 6],
+        ['', 3]
+      ]);
+ 
+      // Options do chart, podemos alterar varios campos, segue a documentação de options para pizza, http://code.google.com/apis/chart/interactive/docs/gallery/piechart.html 
+      var options = {'title':'sequencia primos', //titulo
+                     'titleTextStyle': {fontSize: 16},//estilo do texto, é possivel alterar fonte e cor tb
+                     'legend':{position: 'left', textStyle: {color: 'black', fontSize: 12}},//legenda 
+                     'slices': {3: {color: 'black'}}, //personalizar a cor do slice
+              'width':1000, //size
+                     'height':1500};
+ 
+      // desenho do grafico
+      var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+      chart.draw(data, options);
+    }
+    </script>
+  </head>
+ 
+  <body>
+<!--Div q deve ficar o chart-->
+    <div id="chart_div" style="width:100%; height:50%"></div>
+  </body>
+</html>
